@@ -1,0 +1,170 @@
+.containerMiddle {
+  max-width: 1443px;
+  height: 72px;
+}
+
+.secondDivHeader {
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.searchMachine {
+  position: relative;
+  display: inline-block;
+}
+.searchMachine input {
+  padding-left: 24px;
+  min-width: 657px;
+  height: 48px;
+  border: none;
+  background-color: #F6F5F2;
+  border-radius: 10px;
+  color: var(--GRAY-1, #9F9F9F);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.glass {
+  position: absolute;
+  top: 10px;
+  left: 613px;
+  width: 28px;
+  height: 28px;
+  background-image: url("/img/Glass.png");
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.searchMachine input::-moz-placeholder {
+  left: 24px;
+  position: absolute;
+}
+
+.searchMachine input::placeholder {
+  left: 24px;
+  position: absolute;
+}
+
+#logo {
+  width: 139px;
+  height: 50.641px;
+}
+
+.searchMachine input {
+  min-width: 657px;
+  padding-left: 12px;
+}
+
+.glass {
+  left: 613px;
+}
+
+.groupImages {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 1040px) {
+  .searchMachine input {
+    min-width: 500px;
+    padding-left: 12px;
+  }
+  .glass {
+    left: 469px;
+  }
+  .groupImages {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+@media (max-width: 857px) {
+  .searchMachine input {
+    min-width: 400px;
+    padding-left: 12px;
+  }
+  .glass {
+    left: 359px;
+  }
+  .groupImages {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
+@media (max-width: 757px) {
+  .searchMachine input {
+    min-width: 350px;
+    padding-left: 12px;
+  }
+  .glass {
+    left: 310px;
+  }
+  .groupImages {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+}
+@media (max-width: 686px) {
+  .searchMachine input {
+    min-width: 310px;
+    padding-left: 12px;
+  }
+  .glass {
+    left: 280px;
+  }
+  .groupImages {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+}
+@media (max-width: 625px) {
+  .searchMachine input {
+    min-width: 260px;
+    padding-left: 12px;
+  }
+  .glass {
+    left: 225px;
+  }
+  .groupImages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 551px) {
+  .searchMachine input {
+    min-width: 260px;
+    padding-left: 12px;
+  }
+  .glass {
+    left: 225px;
+  }
+  .groupImages {
+    display: none;
+    align-items: center;
+    gap: 5px;
+  }
+  .glass {
+    background-image: none;
+  }
+}
+@media (max-width: 398px) {
+  #logo {
+    width: 80px;
+    height: 29.641px;
+  }
+}/*# sourceMappingURL=styles.css.map */

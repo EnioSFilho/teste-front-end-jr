@@ -1,0 +1,87 @@
+@import '../variables.module.scss';
+
+.containerMiddle {
+    @include HeaderContainer(72px)
+}
+
+.secondDivHeader {
+    @include HeaderTop(72px, space-evenly)
+}
+
+.searchMachine {
+    position: relative;
+    display: inline-block;
+
+    input {
+        padding-left: 24px;
+        min-width: 657px;
+        height: 48px;
+        border: none;
+        background-color: #F6F5F2;
+        border-radius: 10px;
+        color: var(--GRAY-1, #9F9F9F);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.glass {
+    position: absolute;
+    top: 10px;
+    left: 613px;
+    width: 28px;
+    height: 28px;
+    background-image: url('/img/Glass.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.searchMachine input::placeholder {
+    left: 24px;
+    position: absolute;
+}
+#logo{
+    width: 139px;
+     height: 50.641px;
+}
+
+@include Search(657px,613px,30px,flex);
+
+@media (max-width: 1040px) {
+    @include Search(500px, 469px, 32px,flex)
+}
+
+@media (max-width: 857px) {
+    @include Search (400px, 359px, 32px,flex)
+}
+@media(max-width: 757px){
+    @include Search(350px, 310px,25px,flex)
+
+}
+@media(max-width: 686px){
+    @include Search(310px, 280px,18px,flex)
+}
+
+@media(max-width: 625px){
+
+    @include Search(260px,225px,10px,flex)
+
+}
+@media (max-width: 551px){
+    @include Search(260px,225px,5px,none);
+    .glass{
+        background-image:none;
+    }
+}
+
+@media (max-width: 398px){
+    #logo{
+        width: 80px;
+        height: 29.641px;
+    }
+}

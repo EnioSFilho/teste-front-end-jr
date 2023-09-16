@@ -1,0 +1,52 @@
+@import '../colors.module';
+@import '../variables.module.scss';
+
+.containerHeader {
+   @include HeaderContainer(32px)  
+}
+
+.firstDivHeader { 
+    @include HeaderTop(32px, space-evenly)  
+}
+.textHeaderTop{
+p {
+    color: var(--rosa-primario, #F71963);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    span{    
+        color: $primary;
+    }    
+}
+}
+
+.buy {   
+   @include BuyTruckPay(158px)
+}
+.truck {      
+    @include BuyTruckPay(203px)    
+}
+.credit { 
+    @include BuyTruckPay(165px) 
+}
+
+@media (max-width:528px){
+
+    .buy{
+        @include BuyTruckPayMobile()
+    }
+
+    .truck{
+        @include BuyTruckPayMobile()
+    }
+    .credit{
+        @include BuyTruckPayMobile()
+    }
+
+    p {
+        display: none;
+    }
+}

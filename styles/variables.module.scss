@@ -1,0 +1,107 @@
+@import './colors.module';
+
+@mixin HeaderContainer($height) {
+
+    max-width: 1443px;
+    height: $height;
+
+}
+
+@mixin HeaderTop($height, $justify) {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $line;
+    ;
+
+}
+
+@mixin BuyTruckPay($min-width) {
+
+    min-width: $min-width;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+@mixin BuyTruckPayMobile() {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+@mixin Search ($min-width, $left, $gap, $diplay) {
+    .searchMachine input {
+        min-width: $min-width;
+        padding-left: 12px;
+    }
+
+    .glass {
+        left: $left;
+    }
+
+    .groupImages {
+        display: $diplay;
+        align-items: center;
+        gap: $gap;
+    }
+}
+
+@mixin HeaderBotton($height) {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid $line;
+    box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
+
+    div {
+
+
+        a {
+            margin: 0px;
+            color: $primary;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            cursor: pointer;
+            transition: 0.5s;
+
+
+        }
+
+        &:hover {
+            a {
+                color: $pink;
+                font-size: 13px;
+
+            }
+        }
+    }
+}
+
+@mixin buttonCard () {
+
+    width: 113.806px;
+    height: 18.48px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+}

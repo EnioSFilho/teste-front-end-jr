@@ -1,0 +1,23 @@
+@import '../variables.module.scss';
+
+.containerHeaderBotton{
+   @include HeaderContainer(40px)
+}
+.menuHeaderBotton{
+   
+  @include HeaderBotton(40px);
+  .crown {
+    
+    width: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  img{
+    width: 20px;
+    padding-right: 19px;
+  }
+  
+  
+}

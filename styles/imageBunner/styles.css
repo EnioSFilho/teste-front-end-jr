@@ -1,0 +1,76 @@
+.containerBunner {
+  max-width: 1443px;
+  height: 395px;
+  position: relative;
+  background-image: url("/img/Bunner.png");
+  background-repeat: no-repeat;
+}
+
+.containerBunner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 85.04%);
+  opacity: 0.8;
+  z-index: 1;
+  /* Coloque o gradiente acima da imagem */
+}
+
+.internalContainerBunner {
+  position: relative;
+  width: 822px;
+  display: flex;
+}
+.internalContainerBunner p {
+  margin: 54px 0px 16px 86px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  z-index: 2;
+}
+
+.textContainerBunner {
+  position: relative;
+  display: flex;
+  color: #FFF;
+}
+.textContainerBunner p {
+  margin: 0px 0px 35px 86px;
+  width: 389px;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  z-index: 2;
+}
+
+.buttonBunner {
+  position: relative;
+  display: flex;
+  color: #FFF;
+}
+.buttonBunner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 65px 86px;
+  width: 283px;
+  height: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: var(--rosa-primario, #F71963);
+  z-index: 2;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,68 @@
+@import '../variables.module.scss';
+
+.containerNavBar {
+    @include HeaderContainer(86px)
+}
+
+.containerInternalNavBar {
+    @include HeaderTop(86px, space-evenly);
+    border: none;
+    margin-top: 70px;
+}
+
+.line {
+    width: 360px;
+    border: 1px solid #DEDEDE;
+
+}
+
+.titleNavBar {
+    p {
+        
+        margin: 0px;
+        width: 350px;
+        height: 45px;
+        color: var(--rosa-primario, #F71963);
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+}
+
+
+
+.itensNavBar {
+    @include HeaderTop(40px, space-between);
+    
+
+
+}
+
+.itemMolecule {
+    display: flex;
+    padding: 12px 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border: 1px solid #BDBDBD;
+    background: #FFF;
+
+    p {
+        margin: 0px;
+        color: #3B3B3B;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: none; // Remova a transformação padrão aqui
+
+        &:hover {
+            text-transform: uppercase; // Aplica a transformação em hover
+        }
+    }
+}
